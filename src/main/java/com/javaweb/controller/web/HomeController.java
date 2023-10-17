@@ -17,9 +17,9 @@ public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		UserModel userModel= new UserModel();
-		userModel.setFullName("Hello hny");
-		request.setAttribute("model", userModel);
+//		UserModel userModel= new UserModel();
+//		userModel.setFullName("Hello hny");
+//		request.setAttribute("model", userModel);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/views/web/home.jsp");
 		rd.forward(request, response);
